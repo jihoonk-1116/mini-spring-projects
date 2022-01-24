@@ -12,3 +12,5 @@ static/index.html is considered a static view file in Spring
 ![image](https://user-images.githubusercontent.com/76544061/150881395-280eba35-806b-4a2b-8ae1-4fd9c7ce8149.png)
 
 HelloController returns "hello" in String, then, viewResolver will find "hello.html"
+
+![image](https://user-images.githubusercontent.com/76544061/150882126-9ca5be0e-46c0-4515-ad94-64993e88cd0e.png)
