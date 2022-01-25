@@ -37,7 +37,7 @@ Take a parameter from web browser and change the view point <br>
 
 ## API
 Return data, not template or html file. Spring return object to client as JSON <br>
-The data is being converted by HttpMessageConverter, such as JsonConverter, StringConverter
+The data is being converted by HttpMessageConverter, such as JsonConverter, StringConverter, instead of viewResolver <br>
 HTTP response body contains the data.
 
 <img width="576" alt="Screen Shot 2022-01-24 at 9 13 04 PM" src="https://user-images.githubusercontent.com/76544061/150898212-ebd6d27d-230c-4a21-925f-aa5cd5023e79.png">
