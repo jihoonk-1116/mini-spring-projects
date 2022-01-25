@@ -15,10 +15,19 @@ HelloController returns "hello" in String, then, viewResolver will find "hello.h
 
 ![image](https://user-images.githubusercontent.com/76544061/150882126-9ca5be0e-46c0-4515-ad94-64993e88cd0e.png)
 
-# MVC
+# Web Development
 
+Static, MVC, API.
+
+## MVC
 Model, View, Controller.
 The key of MVC is that sperating data(model), frontend side(view) and backend side (controller -> business logic). 
+<img width="629" alt="Screen Shot 2022-01-24 at 7 35 57 PM" src="https://user-images.githubusercontent.com/76544061/150888542-491dd512-9382-422c-accd-e3aebe9b1b75.png">
+
+<img width="612" alt="Screen Shot 2022-01-24 at 7 35 18 PM" src="https://user-images.githubusercontent.com/76544061/150888468-26ab1b86-7711-49d7-9177-7a88ced15d43.png">
+
+From https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm
+
 
 ## Parameter binding
 Take a parameter from web browser and change the view point <br>
