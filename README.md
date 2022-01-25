@@ -16,7 +16,7 @@ HelloController returns "hello" in String, then, viewResolver will find "hello.h
 ![image](https://user-images.githubusercontent.com/76544061/150882126-9ca5be0e-46c0-4515-ad94-64993e88cd0e.png)
 
 
-## hello-mvc
+## Parameter binding
 Take a parameter from web browser and change the view point <br>
 
 <img width="614" alt="Screen Shot 2022-01-24 at 7 26 55 PM" src="https://user-images.githubusercontent.com/76544061/150887706-1e2e4014-a97f-423a-b125-c89aa5e0bfc6.png">
