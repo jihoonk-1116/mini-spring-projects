@@ -35,4 +35,11 @@ Take a parameter from web browser and change the view point <br>
 <img width="614" alt="Screen Shot 2022-01-24 at 7 26 55 PM" src="https://user-images.githubusercontent.com/76544061/150887706-1e2e4014-a97f-423a-b125-c89aa5e0bfc6.png">
 <img width="466" alt="Screen Shot 2022-01-24 at 7 26 16 PM" src="https://user-images.githubusercontent.com/76544061/150887825-889f62e2-e602-4977-a842-f053a8a1b50e.png">
 
+## API
+Return data, not template or html file. Spring return object to client as JSON
+
+<img width="576" alt="Screen Shot 2022-01-24 at 9 13 04 PM" src="https://user-images.githubusercontent.com/76544061/150898212-ebd6d27d-230c-4a21-925f-aa5cd5023e79.png">
+<img width="437" alt="Screen Shot 2022-01-24 at 9 12 46 PM" src="https://user-images.githubusercontent.com/76544061/150898219-ba7577b8-1645-45c7-ab37-8901a9bf377a.png">
+
+
 
