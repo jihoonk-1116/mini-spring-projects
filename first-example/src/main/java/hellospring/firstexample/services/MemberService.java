@@ -3,6 +3,8 @@ package hellospring.firstexample.services;
 import hellospring.firstexample.domain.Member;
 import hellospring.firstexample.repository.MemberRepository;
 import hellospring.firstexample.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
