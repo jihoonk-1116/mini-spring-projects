@@ -1,5 +1,6 @@
 package hellospring.firstexample;
 
+import hellospring.firstexample.aop.TimeTraceAOP;
 import hellospring.firstexample.repository.JpaMemberRepository;
 import hellospring.firstexample.repository.MemberRepository;
 import hellospring.firstexample.services.MemberService;
@@ -19,6 +20,15 @@ public class SpringConfig {
         this.memberRepository = memberRepository;
     }
 
+    @Bean
+    public MemberService memberService(){
+        return new MemberService(memberRepository);
+    }
+
+    @Bean
+    public TimeTraceAOP timeTraceAOP(){
+        return new TimeTraceAOP();
+    }
 
 //    //EntityManger injection
 //    private EntityManager em;
@@ -33,11 +43,6 @@ public class SpringConfig {
 //    public SpringConfig(DataSource dataSource){
 //        this.dataSource = dataSource;
 //    }
-
-    @Bean
-    public MemberService memberService(){
-        return new MemberService(memberRepository);
-    }
 
 //    @Bean
 //    public MemberRepository memberRepository(){

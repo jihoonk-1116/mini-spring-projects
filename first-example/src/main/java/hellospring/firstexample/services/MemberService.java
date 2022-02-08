@@ -30,7 +30,7 @@ public class MemberService {
         }finally {
             long finish = System.currentTimeMillis();
             long timeMs = finish - start;
-            System.out.println("join: " + timeMs + " ms");
+            //System.out.println("join: " + timeMs + " ms");
         }
     }
 
