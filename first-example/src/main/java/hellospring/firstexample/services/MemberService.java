@@ -21,11 +21,17 @@ public class MemberService {
 
     public Long join(Member member){
 
+        long start = System.currentTimeMillis();
 
-        checkDuplicatedMember(member);
-
-        memberRepository.save(member);
-        return member.getId();
+        try{
+            checkDuplicatedMember(member);
+            memberRepository.save(member);
+            return member.getId();
+        }finally {
+            long finish = System.currentTimeMillis();
+            long timeMs = finish - start;
+            System.out.println("join: " + timeMs + " ms");
+        }
     }
 
     public List<Member> findMember(){
