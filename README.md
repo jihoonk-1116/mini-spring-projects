@@ -21,7 +21,7 @@ Static, MVC, API.
 
 ## MVC
 Model, View, Controller.
-The key of MVC is that manage seperately data(model), frontend side(view) and backend side (controller -> business logic). 
+The key of MVC is that manage seperately data(model), frontend side(view) and backend side (controller -> business logic). <br>
 <img width="629" alt="Screen Shot 2022-01-24 at 7 35 57 PM" src="https://user-images.githubusercontent.com/76544061/150888542-491dd512-9382-422c-accd-e3aebe9b1b75.png">
 
 <img width="612" alt="Screen Shot 2022-01-24 at 7 35 18 PM" src="https://user-images.githubusercontent.com/76544061/150888468-26ab1b86-7711-49d7-9177-7a88ced15d43.png">
@@ -45,12 +45,12 @@ HTTP response body contains the data.
 
 # Developing member management system
   * Business requirement : Data - name, ID / Funtionality - signup, find ID / Database -  Local DB  
-  * Required implementation of an interface for repository in order to switch simply the project's database. 
+  * Required implementation of an interface for repository in order to simply switch the project's database in the future. 
 
 ## Basic Web Application Architecture
-  * Controller - Web MVC's controller
+  * Controller - web MVC's controller
   * Service - core business logic
-  * Repository - Accessing Database, manage domain object
+  * Repository - accessing Database, manage domain object
   * Domain - business domain object (ex) member, order
     
 
