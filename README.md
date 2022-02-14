@@ -72,3 +72,10 @@ Testing join(), duplicatedMember() <br>
 2. Registering a bean manually : Use SpringConfig class <br>
 ![image](https://user-images.githubusercontent.com/76544061/153903191-e5a332f9-1f63-4dfb-8033-d050d5a9d49d.png)
 
+### GET and POST mapping - Assigning HTTP end point to provide contents
+![image](https://user-images.githubusercontent.com/76544061/153906021-240a4d13-111e-4d9c-81c7-afe15f3ce118.png)
+
+## Spring Data accessing 
+1. H2 
+2. JDBC & JDBC template
+3. JPA & Spring Data JPA
