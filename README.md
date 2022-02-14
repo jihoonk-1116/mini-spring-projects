@@ -58,7 +58,7 @@ HTTP response body contains the data.
 ![image](https://user-images.githubusercontent.com/76544061/153896786-fedadc19-29f6-4977-8eb5-ca74b8eaf985.png)
 ### Testing Member Respository
 Testing join(), duplicatedMember() <br>
-![image](https://user-images.githubusercontent.com/76544061/153899911-4f6a77c1-ab11-4802-b653-a2ccfcbca262.png)
+![image](https://user-images.githubusercontent.com/76544061/153900438-f4c005f9-04dc-407b-926d-8fbedc20ef11.png)
 ![image](https://user-images.githubusercontent.com/76544061/153899945-6125df3f-627b-4ea6-928a-f6d832c1d4b4.png)
 
 
