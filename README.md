@@ -82,7 +82,7 @@ DB - H2 (for local development)
   * But, SQL is needed to be written.
 3. JPA & Spring Data JPA
   * JPA generates basic SQL for developer
-  * JPA aims a developer to mainly concentrate on designing Object-Oriented, not SQL
+  * JPA aims a developer to mainly concentrate on designing Object-Oriented while developing, not SQL
   * So, JPA makes developing process efficiently. 
 
 ### Createing Table 
@@ -110,7 +110,7 @@ This follows Open-Closed Principle - A class opens to expansion, but closes to m
 ![image](https://user-images.githubusercontent.com/76544061/153919448-a443b404-2192-4c0b-a9be-1a4f49029684.png)
 
 ### Spring Data JPA
-![image](https://user-images.githubusercontent.com/76544061/153919596-681f1540-8ff1-4891-94a0-d8bba49904d0.png)
+![image](https://user-images.githubusercontent.com/76544061/153919596-681f1540-8ff1-4891-94a0-d8bba49904d0.png) <br>
 Spring Data JPA registers SpringDataJpaMemberRepository in the Spring container as a bean.
 
 ## AOP : Aspect Oriented Programming
