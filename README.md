@@ -52,6 +52,14 @@ HTTP response body contains the data.
   * Service - core business logic
   * Repository - accessing Database, manage domain object
   * Domain - business domain object (ex) member, order
-    
+### Domain - Member class definition
+![image](https://user-images.githubusercontent.com/76544061/153896669-d4d08c8d-8ad3-48a9-9526-19f62d596657.png)
+### Repository Interface 
+![image](https://user-images.githubusercontent.com/76544061/153896786-fedadc19-29f6-4977-8eb5-ca74b8eaf985.png)
+### Testing Member Respository
+Testing join(), duplicatedMember() <br>
+![image](https://user-images.githubusercontent.com/76544061/153899911-4f6a77c1-ab11-4802-b653-a2ccfcbca262.png)
+![image](https://user-images.githubusercontent.com/76544061/153899945-6125df3f-627b-4ea6-928a-f6d832c1d4b4.png)
+
 
 
