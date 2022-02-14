@@ -78,7 +78,12 @@ Testing join(), duplicatedMember() <br>
 ## Spring Data accessing 
 DB - H2 (for local development)
 1. JDBC & JDBC template
-2. JPA & Spring Data JPA
+  * JDBC template reduce JDBC codes as removing rebundant codes
+  * But, SQL is needed to be written.
+3. JPA & Spring Data JPA
+  * JPA generates basic SQL for developer
+  * JPA aims a developer to mainly concentrate on designing Object-Oriented, not SQL
+  * So, JPA makes developing process efficiently. 
 
 ### Createing Table 
 ![image](https://user-images.githubusercontent.com/76544061/153907156-ea02ce0d-2e96-40ec-8880-88540e2b9fd6.png)
@@ -94,3 +99,16 @@ Each of them implements MemberRepository so that switching to the other reposito
 This follows Open-Closed Principle - A class opens to expansion, but closes to modification. 
 
 ### Testing DB integration
+* @SpringBootTest : Testing the functionality with Spring container
+* @Transactional : After each testing, the database that are used is being conducting rollback; so that, it will not affect to the next test.
+* ![image](https://user-images.githubusercontent.com/76544061/153912500-8d1214c6-3d8d-4bdf-a2fc-fe7a58c03651.png)
+
+### JPA Entity Mapping : to let JPA know
+![image](https://user-images.githubusercontent.com/76544061/153916399-6f605bc7-5dcb-4f70-a271-eb5725f92061.png)
+
+## AOP : Aspect Oriented Programming
+* It is about cross-cutting concern(TimeTraceApp) and core concern(MemberService)
+* TimeTraceAop - it evaluates a method's performance.
+* ![image](https://user-images.githubusercontent.com/76544061/153918213-37bba7a8-350b-4254-b876-1af19cacc69c.png)
+* Separated a method's performance evaluation logic and core business logic 
+
