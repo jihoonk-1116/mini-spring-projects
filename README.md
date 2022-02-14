@@ -61,5 +61,7 @@ Testing join(), duplicatedMember() <br>
 ![image](https://user-images.githubusercontent.com/76544061/153900438-f4c005f9-04dc-407b-926d-8fbedc20ef11.png)
 ![image](https://user-images.githubusercontent.com/76544061/153899945-6125df3f-627b-4ea6-928a-f6d832c1d4b4.png)
 
+### Member Service 
+![image](https://user-images.githubusercontent.com/76544061/153900954-78686ee7-04ea-4f58-b426-cd7c4cff3386.png)
 
 
