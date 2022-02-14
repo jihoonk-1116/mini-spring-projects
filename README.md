@@ -106,6 +106,13 @@ This follows Open-Closed Principle - A class opens to expansion, but closes to m
 ### JPA Entity Mapping : to let JPA know
 ![image](https://user-images.githubusercontent.com/76544061/153916399-6f605bc7-5dcb-4f70-a271-eb5725f92061.png)
 
+### JPA Repository
+![image](https://user-images.githubusercontent.com/76544061/153919448-a443b404-2192-4c0b-a9be-1a4f49029684.png)
+
+### Spring Data JPA
+![image](https://user-images.githubusercontent.com/76544061/153919596-681f1540-8ff1-4891-94a0-d8bba49904d0.png)
+Spring Data JPA registers SpringDataJpaMemberRepository in the Spring container as a bean.
+
 ## AOP : Aspect Oriented Programming
 * It is about cross-cutting concern(TimeTraceApp) and core concern(MemberService)
 * TimeTraceAop - it evaluates a method's performance.
