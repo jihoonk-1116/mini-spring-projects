@@ -43,7 +43,7 @@ HTTP response body contains the data.
 <img width="576" alt="Screen Shot 2022-01-24 at 9 13 04 PM" src="https://user-images.githubusercontent.com/76544061/150898212-ebd6d27d-230c-4a21-925f-aa5cd5023e79.png">
 <img width="437" alt="Screen Shot 2022-01-24 at 9 12 46 PM" src="https://user-images.githubusercontent.com/76544061/150898219-ba7577b8-1645-45c7-ab37-8901a9bf377a.png">
 
-# Developing member management system
+# 2. Developing member management system
   * Business requirement : Data - name, ID / Funtionality - signup, find ID / Database -  Local DB  
   * Required implementation of an interface for repository in order to simply switch the project's database in the future. 
 
@@ -67,7 +67,7 @@ Testing join(), duplicatedMember() <br>
 ### Member Controller : This controller needs to be depended to MemberService
 ![image](https://user-images.githubusercontent.com/76544061/153902363-f6255a77-b96d-4e96-ae22-bfefb19a53e1.png)
 
-#### 2 ways for Dependency Injection
+## 2 ways for Dependency Injection
 1. Component Scan : Spring automatically registers classes having @Controller, @Service, @Respository annotations. <br>
 2. Registering a bean manually : Use SpringConfig class <br>
 ![image](https://user-images.githubusercontent.com/76544061/153903191-e5a332f9-1f63-4dfb-8033-d050d5a9d49d.png)
