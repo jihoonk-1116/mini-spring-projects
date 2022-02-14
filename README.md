@@ -76,6 +76,21 @@ Testing join(), duplicatedMember() <br>
 ![image](https://user-images.githubusercontent.com/76544061/153906021-240a4d13-111e-4d9c-81c7-afe15f3ce118.png)
 
 ## Spring Data accessing 
-1. H2 
-2. JDBC & JDBC template
-3. JPA & Spring Data JPA
+DB - H2 (for local development)
+1. JDBC & JDBC template
+2. JPA & Spring Data JPA
+
+### Createing Table 
+![image](https://user-images.githubusercontent.com/76544061/153907156-ea02ce0d-2e96-40ec-8880-88540e2b9fd6.png)
+
+### Configuring application.properties
+![image](https://user-images.githubusercontent.com/76544061/153907309-8ee0a0a1-d25a-4bd8-8f8a-e6f814418f5e.png)
+
+### Switching Repository 
+Each of them implements MemberRepository so that switching to the other repository can be easily done in a single code utlizing Dependency Injection<br> 
+![image](https://user-images.githubusercontent.com/76544061/153908387-b291878d-987e-4238-a6f4-a12233a6637e.png)
+![image](https://user-images.githubusercontent.com/76544061/153910317-9fa12018-94af-44db-8dae-66d8c44681a0.png) <br>
+
+This follows Open-Closed Principle - A class opens to expansion, but closes to modification. 
+
+### Testing DB integration
