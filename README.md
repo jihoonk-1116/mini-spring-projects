@@ -64,4 +64,11 @@ Testing join(), duplicatedMember() <br>
 ### Member Service 
 ![image](https://user-images.githubusercontent.com/76544061/153900954-78686ee7-04ea-4f58-b426-cd7c4cff3386.png)
 
+### Member Controller : This controller needs to be depended to MemberService
+![image](https://user-images.githubusercontent.com/76544061/153902363-f6255a77-b96d-4e96-ae22-bfefb19a53e1.png)
+
+#### 2 ways for Dependency Injection
+1. Component Scan : Spring automatically registers classes having @Controller, @Service, @Respository annotations. <br>
+2. Registering a bean manually : Use SpringConfig class <br>
+![image](https://user-images.githubusercontent.com/76544061/153903191-e5a332f9-1f63-4dfb-8033-d050d5a9d49d.png)
 
