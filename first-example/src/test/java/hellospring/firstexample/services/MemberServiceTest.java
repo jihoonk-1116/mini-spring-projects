@@ -25,7 +25,7 @@ class MemberServiceTest {
 
     @AfterEach
     public void afterEach(){
-
+        memberRepository.clearStore() //Clear respository for each tesing
     }
     @Test
     void join() {

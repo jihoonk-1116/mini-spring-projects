@@ -45,11 +45,11 @@ public class MemberService {
     private void checkDuplicatedMember(Member member) {
 
         memberRepository.findByName(member.getName())
-            .ifPresent(m -> {
+            .ifPresent(m -> {                       //Member object is included in Optional object
                 throw new IllegalStateException("Already Existed Member");
             });
         // Optional<Member> result = memberRepository.findByName(member.getName());
-//        result.ifPresent( m -> { //Member object is included in Optional object
+//        result.ifPresent( m -> { 
 //            throw new IllegalStateException("Already Existed Member...");
 //        });
     }
