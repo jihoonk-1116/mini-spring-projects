@@ -11,8 +11,12 @@ Lists
     - [Aspect Oriented Programming](#aop)
 
 # 1. Hello Spring
-# <a name="hellospring"></a>
+<a name="hellospring"></a>
 
+## Web Development Model
+<a name="developmentmodel"></a>
+* Static, MVC, API.
+## Static
 ## Welcome Page
 
 ![image](https://user-images.githubusercontent.com/76544061/150881346-6a321e3a-43ae-43b8-a794-9126e8a95abb.png)
@@ -27,11 +31,6 @@ static/index.html is considered a static view file in Spring
 HelloController returns "hello" in String, then, viewResolver will find "hello.html"
 
 ![image](https://user-images.githubusercontent.com/76544061/150882126-9ca5be0e-46c0-4515-ad94-64993e88cd0e.png)
-
-# Web Development Model
-<a name="developmentmodel"></a>
-
-Static, MVC, API.
 
 ## MVC
 Model, View, Controller.
