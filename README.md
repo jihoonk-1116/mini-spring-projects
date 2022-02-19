@@ -7,7 +7,8 @@ Lists
     - [Basic Web Architecture](#app-architecture)
     - [2 ways Dependency Injection](#di)
     - [Spring Data accessing](#sda)
-    - [Unit Test](#test)
+    - [Respository Unit Test](#repotest)
+    - [Integration Unit Test](#intetest)
     - [Aspect Oriented Programming](#aop)
 
 # 1. Hello Spring
@@ -72,6 +73,7 @@ HTTP response body contains the data.
 ### Repository Interface 
 ![image](https://user-images.githubusercontent.com/76544061/153896786-fedadc19-29f6-4977-8eb5-ca74b8eaf985.png)
 ### Testing Member Respository
+<a name="repotest"></a>
 Testing join(), duplicatedMember() <br>
 ![image](https://user-images.githubusercontent.com/76544061/153900438-f4c005f9-04dc-407b-926d-8fbedc20ef11.png)
 ![image](https://user-images.githubusercontent.com/76544061/153899945-6125df3f-627b-4ea6-928a-f6d832c1d4b4.png)
@@ -116,7 +118,7 @@ Each of them implements MemberRepository so that switching to the other reposito
 This follows Open-Closed Principle - A class opens to expansion, but closes to modification. 
 
 ### Testing DB integration
- <a name="test"></a>
+ <a name="intetest"></a>
 * @SpringBootTest : Testing the functionality with Spring container
 * @Transactional : After each testing, the database that are used is being conducting rollback; so that, it will not affect to the next test.
 * ![image](https://user-images.githubusercontent.com/76544061/153912500-8d1214c6-3d8d-4bdf-a2fc-fe7a58c03651.png)
