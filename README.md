@@ -1,6 +1,5 @@
 # Spring projects for self-studying
 
-Lists
  * [Hello Spring](#hellospring)
      - [Web Development Model](#developmentmodel)
  * [Order app](#membermanagement)
