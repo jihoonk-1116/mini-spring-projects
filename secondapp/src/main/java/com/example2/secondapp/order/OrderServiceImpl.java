@@ -1,15 +1,26 @@
 package com.example2.secondapp.order;
 
 import com.example2.secondapp.discount.DiscountPolicy;
-import com.example2.secondapp.discount.FixDiscountPolicy;
 import com.example2.secondapp.member.Member;
 import com.example2.secondapp.member.MemberRepository;
-import com.example2.secondapp.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
-    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
+    /*
+        private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
+        private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+        OCP , DIP cannot be employed.
+        it doesn't close to change of code. And, OrderService depends on both of DiscountPolicy and its object
+        The object has to be injected by Spring using config class
+    */
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        //Now, Both of DIP, OCP are followed. OrderServiceiImpl only depends on interfaces.
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
+
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {

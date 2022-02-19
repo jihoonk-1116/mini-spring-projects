@@ -7,7 +7,9 @@ import com.example2.secondapp.member.MemberServiceImpl;
 
 public class MemberApp {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+        //MemberService memberService = new MemberServiceImpl();
         Member member1 = new Member(1L, "member1", Grade.VIP);
         memberService.join(member1);
         Member foundMember = memberService.findMember(1L);
