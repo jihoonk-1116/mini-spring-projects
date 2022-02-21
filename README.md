@@ -1,5 +1,22 @@
-# 1. Hello Spring
+# Spring projects for self-studying
 
+ * [Hello Spring](#hellospring)
+     - [Web Development Model](#developmentmodel)
+ * [Order app](#membermanagement)
+    - [Basic Web Architecture](#app-architecture)
+    - [2 ways Dependency Injection](#di)
+    - [Spring Data accessing](#sda)
+    - [Respository Unit Test](#repotest)
+    - [Integration Unit Test](#intetest)
+    - [Aspect Oriented Programming](#aop)
+
+# 1. Hello Spring
+<a name="hellospring"></a>
+
+## Web Development Model
+<a name="developmentmodel"></a>
+* Static, MVC, API.
+## Static
 ## Welcome Page
 
 ![image](https://user-images.githubusercontent.com/76544061/150881346-6a321e3a-43ae-43b8-a794-9126e8a95abb.png)
@@ -14,10 +31,6 @@ static/index.html is considered a static view file in Spring
 HelloController returns "hello" in String, then, viewResolver will find "hello.html"
 
 ![image](https://user-images.githubusercontent.com/76544061/150882126-9ca5be0e-46c0-4515-ad94-64993e88cd0e.png)
-
-# Web Development
-
-Static, MVC, API.
 
 ## MVC
 Model, View, Controller.
@@ -44,10 +57,12 @@ HTTP response body contains the data.
 <img width="437" alt="Screen Shot 2022-01-24 at 9 12 46 PM" src="https://user-images.githubusercontent.com/76544061/150898219-ba7577b8-1645-45c7-ab37-8901a9bf377a.png">
 
 # 2. Developing member management system
+<a name="membermanagement"></a>
   * Business requirement : Data - name, ID / Funtionality - signup, find ID / Database -  Local DB  
   * Required implementation of an interface for repository in order to simply switch the project's database in the future. 
 
 ## Basic Web Application Architecture
+<a name="app-architecture"></a>
   * Controller - web MVC's controller
   * Service - core business logic
   * Repository - accessing Database, manage domain object
@@ -57,6 +72,7 @@ HTTP response body contains the data.
 ### Repository Interface 
 ![image](https://user-images.githubusercontent.com/76544061/153896786-fedadc19-29f6-4977-8eb5-ca74b8eaf985.png)
 ### Testing Member Respository
+<a name="repotest"></a>
 Testing join(), duplicatedMember() <br>
 ![image](https://user-images.githubusercontent.com/76544061/153900438-f4c005f9-04dc-407b-926d-8fbedc20ef11.png)
 ![image](https://user-images.githubusercontent.com/76544061/153899945-6125df3f-627b-4ea6-928a-f6d832c1d4b4.png)
@@ -68,6 +84,7 @@ Testing join(), duplicatedMember() <br>
 ![image](https://user-images.githubusercontent.com/76544061/153902363-f6255a77-b96d-4e96-ae22-bfefb19a53e1.png)
 
 ## 2 ways for Dependency Injection
+<a name="di"></a>
 1. Component Scan : Spring automatically registers classes having @Controller, @Service, @Respository annotations. <br>
 2. Registering a bean manually : Use SpringConfig class <br>
 ![image](https://user-images.githubusercontent.com/76544061/153903191-e5a332f9-1f63-4dfb-8033-d050d5a9d49d.png)
@@ -76,6 +93,7 @@ Testing join(), duplicatedMember() <br>
 ![image](https://user-images.githubusercontent.com/76544061/153906021-240a4d13-111e-4d9c-81c7-afe15f3ce118.png)
 
 ## Spring Data accessing 
+<a name="sda"></a>
 DB - H2 (for local development)
 1. JDBC & JDBC template
   * JDBC template reduce JDBC codes as removing rebundant codes
@@ -99,6 +117,7 @@ Each of them implements MemberRepository so that switching to the other reposito
 This follows Open-Closed Principle - A class opens to expansion, but closes to modification. 
 
 ### Testing DB integration
+ <a name="intetest"></a>
 * @SpringBootTest : Testing the functionality with Spring container
 * @Transactional : After each testing, the database that are used is being conducting rollback; so that, it will not affect to the next test.
 * ![image](https://user-images.githubusercontent.com/76544061/153912500-8d1214c6-3d8d-4bdf-a2fc-fe7a58c03651.png)
@@ -114,6 +133,7 @@ This follows Open-Closed Principle - A class opens to expansion, but closes to m
 Spring Data JPA registers SpringDataJpaMemberRepository in the Spring container as a bean.
 
 ## AOP : Aspect Oriented Programming
+ <a name="aop"></a>
 * It is about cross-cutting concern(TimeTraceApp) and core concern(MemberService)
 * TimeTraceAop - it evaluates a method's performance.
 * ![image](https://user-images.githubusercontent.com/76544061/153918213-37bba7a8-350b-4254-b876-1af19cacc69c.png)
