@@ -1,5 +1,6 @@
 package com.example2.secondapp.order;
 
+import com.example2.secondapp.annotation.MainDiscountPolicy;
 import com.example2.secondapp.discount.DiscountPolicy;
 import com.example2.secondapp.member.Member;
 import com.example2.secondapp.member.MemberRepository;
@@ -9,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-@RequiredArgsConstructor //Lombok annotation
+//@RequiredArgsConstructor //Lombok annotation
 public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository;
@@ -21,12 +22,12 @@ public class OrderServiceImpl implements OrderService {
         it doesn't close to change of code. And, OrderService depends on both of DiscountPolicy and its object
         The object has to be injected by Spring using config class
     */
-//    @Autowired
-//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-//        //Now, Both of DIP, OCP are followed. OrderServiceiImpl only depends on interfaces.
-//        this.memberRepository = memberRepository;
-//        this.discountPolicy = discountPolicy;
-//    }
+    @Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
+        //Now, Both of DIP, OCP are followed. OrderServiceiImpl only depends on interfaces.
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
 
     @Override
